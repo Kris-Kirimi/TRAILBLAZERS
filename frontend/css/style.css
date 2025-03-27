@@ -1,0 +1,385 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.btn {
+    background: #ff6600;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+.hero h2 {
+    font-size: 2.5rem;
+}
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+}
+.search-bar button {
+    padding: 10px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Listings Section */
+.listings {
+    text-align: center;
+    padding: 40px 0;
+}
+.listing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.listing-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+.listing-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Login Page Styles */
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h2 {
+    margin-bottom: 15px;
+}
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+.login-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.links {
+    margin-top: 10px;
+}
+.links a {
+    text-decoration: none;
+    color: #ff6600;
+}
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+.sidebar ul li a:hover {
+    background: #ff6600;
+}
+.logout {
+    color: red;
+}
+
+/* Main Content */
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+}
+.dashboard-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-content h2 {
+    margin: 0;
+}
+
+/* Listings */
+.listing-grid {
+    display: flex;
+    gap: 20px;
+}
+.listing-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+.listing-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* Sign Up Page Styles */
+.signup-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.signup-container h2 {
+    margin-bottom: 15px;
+}
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+.signup-container label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.signup-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.links {
+    margin-top: 10px;
+}
+.links a {
+    text-decoration: none;
+    color: #ff6600;
+}
+/* Post Listing Page */
+.post-listing form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.post-listing label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.post-listing input, .post-listing textarea, .post-listing select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+.post-listing textarea {
+    resize: vertical;
+    height: 100px;
+}
+.post-listing .btn {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Transactions Page */
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.transactions th, .transactions td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.transactions th {
+    background: #333;
+    color: white;
+}
+.transactions .status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+.transactions .status.completed {
+    color: green;
+}
+.transactions .status.pending {
+    color: orange;
+}
+.transactions .status.failed {
+    color: red;
+}
+
+/* Search Bar */
+header input {
+    padding: 8px;
+    width: 250px;
+    margin-left: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Settings Page */
+.settings form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.settings label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.settings input, .settings select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+.settings .btn {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings .btn.danger {
+    background: #cc0000;
+}
+/* Listings Page */
+.listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.listing-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.listing-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+.listing-card h3 {
+    margin: 10px 0;
+}
+.listing-card p {
+    margin: 5px 0;
+}
+.listing-card .btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* Single Listing Page */

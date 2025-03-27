@@ -1,0 +1,60 @@
+1. Project Structure
+Frontend (Static HTML, CSS, JavaScript)
+📂 frontend/
+├── 📂 assets/ (Images, logos, icons, etc.)
+├── 📂 css/ (Stylesheets – main.css, responsive.css)
+├── 📂 js/ (JavaScript files for interactivity – navbar, form validation, etc.)
+├── 📂 templates/ (HTML templates for Django later)
+│ ├── 📜 base.html (Main layout – navbar, footer, etc.)
+│ ├── 📜 index.html (Homepage – landing page with search functionality)
+│ ├── 📜 listings.html (Page to display available cars & land for lease)
+│ ├── 📜 details.html (Individual listing details page)
+│ ├── 📜 login.html (User authentication page – login/register)
+│ ├── 📜 dashboard.html (User profile – manage listings & bookings)
+│ ├── 📜 admin.html (Admin panel for verification, user management, etc.)
+│
+├── 📜 index.html (Landing page for testing the design first)
+└── 📜 README.md (Project documentation)
+
+2. Backend (Django)
+📂 backend/
+├── 📂 flex_leasing/ (Main Django project folder)
+│ ├── 📂 core/ (Main app – authentication, models, views)
+│ ├── 📂 listings/ (App for managing car & land listings)
+│ ├── 📂 bookings/ (App for lease transactions, payments, etc.)
+│ ├── 📂 templates/ (Will later replace static HTML files when integrated)
+│ ├── 📂 static/ (Where frontend assets will be stored for Django templates)
+│ ├── 📜 settings.py (Project settings – database, authentication, static files)
+│ ├── 📜 urls.py (Routes for handling different pages and API endpoints)
+│ ├── 📜 views.py (Handles business logic – fetching listings, user authentication)
+│ ├── 📜 models.py (Database schema – Users, Listings, Bookings, Payments)
+│ ├── 📜 admin.py (Admin panel for managing users, listings, payments)
+│ ├── 📜 manage.py (Main entry point for Django commands)
+│
+├── 📂 venv/ (Virtual environment for dependencies)
+├── 📜 requirements.txt (Django, PostgreSQL, Pillow for images, etc.)
+├── 📜 .env (Environment variables for security keys, database URL)
+└── 📜 Dockerfile (Optional – for containerized deployment)
+
+3. Development Plan
+Phase 1: Frontend (Static HTML & CSS)
+Create basic HTML structure for landing page, listings, and dashboard.
+
+Style with CSS (or TailwindCSS if preferred).
+
+Test responsiveness (mobile-friendly design).
+
+Phase 2: Backend Setup (Django)
+Set up Django project and connect PostgreSQL.
+
+Create models for Users, Listings, Bookings, and Payments.
+
+Build APIs for authentication and listing management.
+
+Phase 3: Integrate Frontend with Django
+Convert static HTML to Django templates (base.html, {% include %} system).
+
+Serve static files correctly (css/, js/, images/).
+
+Implement search & filtering for listings.
+
